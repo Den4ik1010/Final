@@ -13,7 +13,64 @@
         }
 
         body {
-            background-color: lightgray
+            margin: 20px;
+            background-color: rgb(211, 211, 211);
+        }
+        
+        .card-small {
+            background-color: white;
+            padding: 18px;
+            box-shadow: 3px 3px 2px rgb(92, 92, 92);
+
+            flex-basis: 25%;
+        }
+
+        .title-block {
+            background-color: green;
+            padding: 16px;
+            position: relative;
+
+            top: -30px;
+        }
+        .title-block1 {
+            background-color: rgb(212, 160, 16);
+            padding: 16px;
+            position: relative;
+
+            top: -30px;
+        }
+        .title-block2 {
+            background-color: rgb(16, 27, 182);
+            padding: 16px;
+            position: relative;
+
+            top: -30px;
+        }
+        .title-block3 {
+            background-color: rgb(218, 19, 95);
+            padding: 16px;
+            position: relative;
+
+            top: -30px;
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            text-align: right;
+        }
+        
+        .card-sm-text {
+            font-size: 32px;
+            font-weight: normal;
+        }
+
+        .card-footer img {
+            vertical-align: baseline;
+        }
+
+        .container-1 {
+            display: flex;
+            gap: 14px;
         }
 
         .main-container {
@@ -30,6 +87,7 @@
 
         nav ul {
             list-style-type: none;
+            padding-left: 0;
         }
 
         nav a {
@@ -117,13 +175,82 @@
                 </li>
             </ul>
         </nav>
+        
         <div class="right-container">
+            
             <header>
                 <h2>Dashboard</h2>
             </header>
             <main>
                 <!-- main content -->
-                Content
+                <div class="container-1">
+                    <div class="card-small">
+                        <div class="card-header">
+                            <div class="title-block">
+                                <img src="./images/data_white.svg" alt="">
+                            </div>
+                            <div>
+                                <span>Used Space</span>
+                                <br />
+                                <strong class="card-sm-text">49/50 GB</strong>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="card-footer">
+                            <img width="16" src="./images/alert.png" alt=""> Get more space...
+                        </div>
+                    </div>
+                    <div class="card-small">
+                        <div class="card-header">
+                            <div class="title-block1">
+                                <img src="./images/shop_white.svg" alt="">
+                            </div>
+                            <div>
+                                <span>Revenue</span>
+                                <br />
+                                <strong class="card-sm-text">$ 34,245</strong>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="card-footer">
+                            <img width="16" src="./images/calendar.png" alt=""> Last 24 Hours
+                        </div>
+                    </div>
+                    <div class="card-small">
+                        <div class="card-header">
+                            <div class="title-block2">
+                                <img src="./images/tag_white.svg" alt="">
+                            </div>
+                            <div>
+                                <span>Fixed Issues</span>
+                                <br />
+                                <strong class="card-sm-text">75</strong>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="card-footer">
+                            <img width="16" src="./images/down.png" alt=""> Tracked from Github
+                        </div>
+                    </div>
+                    <div class="card-small">
+                        <div class="card-header">
+                            <div class="title-block3">
+                                <img src="./images/paperplane_white.svg" alt="">
+                            </div>
+                            <div>
+                                <span>Followers</span>
+                                <br />
+                                <strong class="card-sm-text">+ 245</strong>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="card-footer">
+                            <img width="16" src="./images/time.png" alt=""> Last 24 Hours
+                        </div>
+                    </div>
+                </div>
+    
+
             </main>
             <footer>
                 <div>
