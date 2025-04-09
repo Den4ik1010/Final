@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,49 +8,50 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         body {
-            margin: 0;
+            margin: 0
+            ;
             font-family: Arial, Helvetica, sans-serif;
         }
-
+ 
         body {
             margin: 20px;
             background-color: rgb(211, 211, 211);
         }
-        
+       
         .card-small {
             background-color: white;
             padding: 18px;
             box-shadow: 3px 3px 2px rgb(92, 92, 92);
-
+ 
             flex-basis: 25%;
         }
-
+ 
         .title-block {
             background-color: green;
             padding: 16px;
             position: relative;
-
+ 
             top: -30px;
         }
         .title-block1 {
             background-color: rgb(212, 160, 16);
             padding: 16px;
             position: relative;
-
+ 
             top: -30px;
         }
         .title-block2 {
             background-color: rgb(16, 27, 182);
             padding: 16px;
             position: relative;
-
+ 
             top: -30px;
         }
         .title-block3 {
             background-color: rgb(218, 19, 95);
             padding: 16px;
             position: relative;
-
+ 
             top: -30px;
         }
         .card-header {
@@ -58,25 +59,25 @@
             justify-content: space-between;
             text-align: right;
         }
-        
+       
         .card-sm-text {
             font-size: 32px;
             font-weight: normal;
         }
-
+ 
         .card-footer img {
             vertical-align: baseline;
         }
-
+ 
         .container-1 {
             display: flex;
             gap: 14px;
         }
-
+ 
         .main-container {
             display: flex;
         }
-
+ 
         nav {
             border-right: 2px solid gray;
             padding: 20px;
@@ -84,20 +85,21 @@
             box-sizing: border-box;
             margin-right: 20px;
         }
-
+ 
         nav ul {
             list-style-type: none;
             padding-left: 0;
         }
-
+ 
         nav a {
             text-decoration: none;
             color: rgb(46, 46, 46);
             padding: 20px;
-
+            text-wrap: nowrap;
+ 
             display: block;
         }
-
+ 
         nav a:hover {
             background-color: rgb(114, 54, 54);
             color: white;
@@ -106,41 +108,199 @@
         main {
             padding-bottom: 20px;
         }
-
+ 
         .right-container {
             flex-grow: 1;
         }
-
+ 
         footer {
             border-top: 1px solid gray;
             padding: 12px;
-
+ 
             display: flex;
             align-items: center;
         }
-
+ 
         footer p {
             margin-left: auto;
         }
-
+ 
         footer a {
             text-decoration: none;
             color: black;
             text-transform: uppercase;
             font-weight: bold;
         }
-
+ 
         footer a:hover {
             text-decoration: underline;
         }
-
+ 
         .me-3 {
             margin-right: 9px;
         }
-        
+ 
+        .container-2 {
+            margin-top: 40px;
+            display: flex;
+            gap: 14px;
+        }
+ 
+        .card-mid {
+            background-color: white;
+            padding: 18px;
+            box-shadow: 3px 3px 2px rgb(92, 92, 92);
+ 
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+ 
+        .card-mid .card-header {
+            background-color: green;
+            padding: 16px;
+            position: relative;
+            top: -30px;
+        }
+ 
+        .card-mid .card-title {
+            font-size: 32px;
+            font-weight: normal;
+        }
+ 
+        .card-mid .card-body {
+            margin-top: -20px;
+        }
+ 
+        .card-mid .card-footer img {
+            vertical-align: middle;
+        }
+ 
+        .container-2 .card-header img {
+          /* height: 200px; */
+          width: 100%;
+          object-fit: contain;
+        }
+        .yellow .card-header
+        {
+            background-color: rgb(216, 170, 18);
+        }
+        .blue .card-header
+        {
+            background-color: rgb(20, 7, 190);
+        }
+        .container {
+      display: flex;
+      gap: 30px;
+    }
+
+    /* TASKS BLOCK */
+    .card {
+      background: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      width: 50%;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+
+    .tasks-header {
+      background: linear-gradient(to right, #f9a825, #f57f17);
+      padding: 30px 20px;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .tasks-header span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .task-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .task-actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .check-icon, .remove-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      color: white;
+      text-align: center;
+      line-height: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .check-icon {
+      background: #4caf50;
+    }
+
+    .remove-icon {
+      background: #f44336;
+    }
+
+    /* EMPLOYEE BLOCK */
+    .employees-card {
+      background: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      width: 50%;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+
+    .employees-header {
+      background: #1e88e5;
+      color: white;
+      padding: 22px 20px;
+      font-weight: bold;
+    }
+
+    .employees-subtitle {
+      font-weight: normal;
+      font-size: 14px;
+      margin-top: 4px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 10px 20px;
+    }
+
+    th {
+      color: #888;
+      font-weight: 600;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tbody td {
+      color: #333;
+    }
+      
     </style>
 </head>
-
+ 
 <body>
     <div class="main-container">
         <nav>
@@ -175,9 +335,9 @@
                 </li>
             </ul>
         </nav>
-        
+       
         <div class="right-container">
-            
+           
             <header>
                 <h2>Dashboard</h2>
             </header>
@@ -187,7 +347,7 @@
                     <div class="card-small">
                         <div class="card-header">
                             <div class="title-block">
-                                <img src="./images/data_white.svg" alt="">
+                                <img src="./image1/data_white.svg" alt="">
                             </div>
                             <div>
                                 <span>Used Space</span>
@@ -197,13 +357,13 @@
                         </div>
                         <hr>
                         <div class="card-footer">
-                            <img width="16" src="./images/alert.png" alt=""> Get more space...
+                            <img width="16" src="./image1/alert.png" alt=""> Get more space...
                         </div>
                     </div>
                     <div class="card-small">
                         <div class="card-header">
                             <div class="title-block1">
-                                <img src="./images/shop_white.svg" alt="">
+                                <img src="./image1/shop_white.svg" alt="">
                             </div>
                             <div>
                                 <span>Revenue</span>
@@ -213,13 +373,13 @@
                         </div>
                         <hr>
                         <div class="card-footer">
-                            <img width="16" src="./images/calendar.png" alt=""> Last 24 Hours
+                            <img width="16" src="./image1/calendar.png" alt=""> Last 24 Hours
                         </div>
                     </div>
                     <div class="card-small">
                         <div class="card-header">
                             <div class="title-block2">
-                                <img src="./images/tag_white.svg" alt="">
+                                <img src="./image1/tag_white.svg" alt="">
                             </div>
                             <div>
                                 <span>Fixed Issues</span>
@@ -229,13 +389,13 @@
                         </div>
                         <hr>
                         <div class="card-footer">
-                            <img width="16" src="./images/down.png" alt=""> Tracked from Github
+                            <img width="16" src="./image1/down.png" alt=""> Tracked from Github
                         </div>
                     </div>
                     <div class="card-small">
                         <div class="card-header">
                             <div class="title-block3">
-                                <img src="./images/paperplane_white.svg" alt="">
+                                <img src="./image1/paperplane_white.svg" alt="">
                             </div>
                             <div>
                                 <span>Followers</span>
@@ -245,12 +405,143 @@
                         </div>
                         <hr>
                         <div class="card-footer">
-                            <img width="16" src="./images/time.png" alt=""> Last 24 Hours
+                            <img width="16" src="./image1/time.png" alt=""> Last 24 Hours
                         </div>
                     </div>
                 </div>
-    
+ 
+                <div class="container-2">
+                  <div class="card-mid">
+                      <div class="card-header">
+                          <img src="./image1/graphics.svg" alt="">
+                      </div>
+                      <div class="card-body">
+                          <span class="card-title">Daily Sales</span>
+                          <br />
+                          <span>55% increase in today sales</span>
+                      </div>
+                      <hr>
+                      <div class="card-footer">
+                          <img width="16" src="./image1/time.png" alt=""> updated 4 minutes ago
+                      </div>
+                  </div>
+                  <div class="card-mid yellow">
+                      <div class="card-header">
+                          <img src="./image1/graphics.svg" alt="">
+                      </div>
+                      <div class="card-body">
+                          <span class="card-title">Email Subscriptions</span>
+                          <br />
+                          <span>Last Campaign Perfomance</span>
+                      </div>
+                      <hr>
+                      <div class="card-footer">
+                          <img width="16" src="./image1/time.png" alt=""> campaign 2 minutes ago
+                      </div>
+                  </div>
+                  <div class="card-mid blue">
+                    <div class="card-header">
+                        <img src="./image1/graphics.svg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-title">Email Subscriptions</span>
+                        <br />
+                        <span>Last Campaign Perfomance</span>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <img width="16" src="./image1/time.png" alt=""> campaign 2 minutes ago
+                    </div>
+                </div>
+              </div>
+              <div class="container">
 
+                <!-- TASKS BLOCK -->
+                <div class="card">
+                  <div class="tasks-header">
+                    <span>Tasks:</span>
+                    <span><img src="./image1/bug.svg" alt="Bug"></span>
+                    Bugs
+                    <span><img src="./image1/web.svg" alt="website"></span>
+                    Website
+                    <span><img src="./image1/cloud.svg" alt="Server"></span>
+                    Server
+                  </div>
+            
+                  <!-- Task Items -->
+                  <div class="task-item">
+                    <label><input type="checkbox"> Sign contract for “What are conference organizers afraid of?”</label>
+                    <div class="task-actions">
+                        <img src="./image1/edit.png" alt="">
+                        <img src="./image1/remove.png" alt="">
+                    </div>
+                  </div>
+                  <div class="task-item">
+                    <label><input type="checkbox"> Sign contract for “What are conference organizers afraid of?”</label>
+                    <div class="task-actions">
+                        <img src="./image1/edit.png" alt="">
+                        <img src="./image1/remove.png" alt="">
+                    </div>
+                  </div>
+                  <div class="task-item">
+                    <label><input type="checkbox"> Sign contract for “What are conference organizers afraid of?”</label>
+                    <div class="task-actions">
+                        <img src="./image1/edit.png" alt="">
+                        <img src="./image1/remove.png" alt="">
+                    </div>
+                  </div>
+                  <div class="task-item">
+                    <label><input type="checkbox"> Sign contract for “What are conference organizers afraid of?”</label>
+                    <div class="task-actions">
+                        <img src="./image1/edit.png" alt="">
+                        <img src="./image1/remove.png" alt="">
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- EMPLOYEES BLOCK -->
+                <div class="employees-card">
+                  <div class="employees-header">
+                    <div>Employees Stats</div>
+                    <div class="employees-subtitle">New employees on 19th September, 2019</div>
+                  </div>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Salary</th>
+                        <th>Country</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Dakota Rice</td>
+                        <td>$36,738</td>
+                        <td>Niger</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>Dakota Rice</td>
+                        <td>$36,738</td>
+                        <td>Niger</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>Dakota Rice</td>
+                        <td>$36,738</td>
+                        <td>Niger</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>Dakota Rice</td>
+                        <td>$36,738</td>
+                        <td>Niger</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
             </main>
             <footer>
                 <div>
@@ -261,8 +552,13 @@
                 <p>2025 - made with love</p>
             </footer>
         </div>
-    </div>
-
+            
+              </div>
+              
+            
+            </body>
+            </html>
+             
 </body>
-
+ 
 </html>
