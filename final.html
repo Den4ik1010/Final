@@ -106,26 +106,51 @@
         footer {
             border-top: 1px solid gray;
             padding: 12px;
- 
+
             display: flex;
             align-items: center;
         }
- 
+
         footer p {
             margin-left: auto;
         }
- 
+
         footer a {
             text-decoration: none;
             color: black;
             text-transform: uppercase;
             font-weight: bold;
         }
- 
+
         footer a:hover {
             text-decoration: underline;
         }
- 
+
+        @media (max-width: 1000px) {
+            
+            .profile-form {
+                flex-direction: column;
+            }
+
+            .form-right {
+                text-align: center;
+                margin-top: 20px;
+                order: -1;
+            }
+        }
+        
+        @media (max-width: 800px) {
+    nav {
+        display: none !important; /* Гарантовано приховує меню */
+        visibility: hidden;
+        height: 0;
+        width: 0;
+        overflow: hidden;
+    }
+}
+
+
+     
     </style>
 </head>
 
@@ -185,7 +210,8 @@
                     </form>
                 </div>
                 <div class="form-right">
-                    <img src="images/rs-7539-20121017-keef-624-1350503449.webp" alt="Profile">
+                    <img src="C:\Users\SCHOOL\Desktop\ogo-final-\ogo-final-\imege\rs-7539-20121017-keef-624-1350503449.webp"
+                        alt="Profile">
                     <h4>CEO / CO-FOUNDER</h4>
                     <h3>Chief Keef</h3>
                     <p>Don't be scared of the truth because we need to restart the human foundation in truth. And I love
